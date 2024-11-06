@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaMind</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="DaMind.png" alt="Logo DaMind" width="40" height="40"> DaMind
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="profil.html">Counselors</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <form action="process_booking.php" method="post">
+            <h2>Pemesanan</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal">Tanggal </label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="form-group">
+                <label for="waktu">Waktu </label>
+                <input type="time" id="waktu" name="waktu" required>
+            </div>
+            <div class="form-group">
+                <label for="jenis_layanan">Jenis Layanan</label>
+                <select id="jenis_layanan" name="jenis_layanan" class="form-control" required>
+                    <option value="Konsultasi Individu">Konsultasi Individu</option>
+                    <option value="Konsultasi Kelompok">Konsultasi Kelompok</option>
+                    <option value="Sesi Terapi">Sesi Terapi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Pesan</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

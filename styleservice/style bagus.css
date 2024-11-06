@@ -1,0 +1,107 @@
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  border: 1px solid #000; 
+  padding: 10px; 
+  width: 75vw; /* Lebar kontainer 80% dari lebar layar */
+  margin: 0 auto; /* Pusatkan kontainer di tengah layar */
+  background-color: lightblue;
+  padding: 20px;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom untuk layar besar */
+  grid-template-rows: 1fr auto;   /* Dua baris dengan ukuran tetap untuk baris pertama */
+  
+}
+.card-content{
+  width: 300px; 
+  height: 300px; 
+  background-color: #f8f3f3; 
+  border: 1px solid #000; 
+  margin-top: 50px;
+  grid-column: 1 / span 2; /* Konten ketiga mengambil dua kolom dan berada di tengah */
+          justify-self: center
+}
+
+
+
+
+/* mengatur penampilan item */
+.item {
+  width: 300px; 
+  height: 300px; 
+  background-color: #f8f3f3; 
+  border: 1px solid #000;
+  margin-left: 10px; 
+  justify-self: center
+
+  
+}
+
+.price{
+  font-size: 1.2em;
+  color: #358000;
+  font-weight: bold;
+}
+img {
+  width: 40px; 
+  height: auto; 
+  border: 1px;
+}
+.feature {
+  display: flex;
+  font-family:Monospace ;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.containerlogo {
+  position: relative;
+  width: 300px; 
+  height: 200px; 
+}
+
+.logo {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  width: 80px; 
+  height: auto; 
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.navbar {
+background-color: #403df7;
+border-bottom: 1px solid #1d55f0;
+}
+
+.navbar .navbar-brand {
+font-size: 1.5rem;
+color: #333;
+}
+
+.navbar .nav-link {
+font-size: 1rem;
+color: #333;
+padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link:hover {
+color: #007bff;
+}
+
+.container2 {
+margin: 20px;
+}

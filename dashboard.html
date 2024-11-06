@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaMind Konseling</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style dashboard.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  </head>
+
+  <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+              <img src="DaMind.png" alt="Logo DaMind" width="40" height="40" /> DaMind
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page review.html">Review</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About Us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="layanan.html">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Profil.html"
+                    >Counselors</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container mt-5 pt-5">
+      <div class="row">
+          <!-- Kolom Teks -->
+          <div class="col-md-8">
+              <h1 style="font-size: 3rem;">Welcome to DaMind</h1>
+              <p style="font-size: 1.5rem;">DaMind merupakan media edukasi yang membantu Anda mempelajari ilmu-ilmu
+                  kehidupan yang tidak diajarkan di sekolah dan mewujudkan kehidupan ideal Anda.</p>
+          </div>
+          <!-- Kolom Gambar -->
+          <div class="col-md-4">
+              <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indikator -->
+                  <ol class="carousel-indicators">
+                      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#homeCarousel" data-slide-to="1"></li>
+                      <li data-target="#homeCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Carousel Slides -->
+                  <div class="carousel-inner">
+                      <!-- Slide 1 -->
+                      <div class="carousel-item active">
+                          <img src="banner-01.png" class="d-block w-100 carousel-img" alt="Slide 1">
+                      </div>
+                      <!-- Slide 2 -->
+                      <div class="carousel-item">
+                          <img src="banner-02.png" class="d-block w-100 carousel-img" alt="Slide 2">
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="carousel-item">
+                          <img src="banner-03.png" class="d-block w-100 carousel-img" alt="Slide 3">
+                      </div>
+                  </div>
+                  <!-- Kontrol Carousel -->
+                  <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Bagian untuk Filsafat Pragmatisme -->
+      <div class="row mt-4">
+          <div class="col-md-8 text-justify">
+              <h1 style="font-size: 2rem;">Filsafat Pragmatisme yang Baik Pola Hidup</h1>
+          </div>
+          <div class="col-md-6 text-justify">
+              <p style="font-size: 1.25rem;">Pragmatis yang mengutamakan kebahagiaan setiap individu berhak hidup
+                  sesuai keinginannya. Namun hidup sesuai keinginan bukan berarti hidup sesuai keinginan tanpa
+                  mempertimbangkan berbagai konsekuensi dari keputusan Anda.</p>
+          </div>
+          <div class="col-md-6 text-justify">
+              <p style="font-size: 1.25rem;">DaMind berpendapat bahwa kehidupan yang ideal adalah kehidupan yang
+                  dijalani seseorang sesuai dengan keinginannya, tanpa merugikan dirinya sendiri atau orang lain,
+                  namun tetap bermakna dan memberikan pengaruh positif dalam jangka pendek dan jangka panjang.</p>
+          </div>
+      </div>
+
+      <section id="gallery" class="container mt-4">
+        <h2>DaMind</h2>
+        <div class="row">
+            <!-- Gambar 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="edukasi 1.png" class="card-img-top clickable" alt="Kegiatan 1">
+                </div>
+            </div>
+            <!-- Gambar 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="edukasi 2.png" class="card-img-top clickable" alt="Kegiatan 2">
+                </div>
+            </div>
+            <!-- Gambar 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                  <img src="edukasi 3.png" class="card-img-top clickable" alt="Kegiatan 3">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Script untuk Mengatur Perilaku Klik pada Gambar -->
+  <script>
+      // Mendapatkan semua elemen gambar dengan kelas 'clickable'
+      const images = document.querySelectorAll('.clickable');
+  
+      // Menambahkan event listener untuk setiap gambar
+      images.forEach((image) => {
+          image.addEventListener('click', function () {
+              // Menyembunyikan semua keterangan lainnya
+              document.querySelectorAll('.description').forEach((desc) => {
+                  desc.style.display = 'none';
+              });
+          });
+      });
+  </script>
+
+ <!-- Fitur Penghitung Waktu Mundur -->
+ <section id="countdown" class="container mt-4 text-center">
+    <h2>Acara Mendatang</h2>
+    <p>Peluncuran produk baru dalam:</p>
+    <div id="timer" style="font-size: 2rem;"></div>
+</section>
+
+<!-- Bagian Promosi Khusus (Awalnya disembunyikan) -->
+<section id="specialOffers" class="container mt-4" style="display: none;">
+    <h2>Promosi Khusus</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="promo1.jpg" class="card-img-top" alt="Promo 1">
+                <div class="card-body">
+                    <h5 class="card-title">Diskon 20% Konseling</h5>
+                    <p class="card-text">Dapatkan diskon 20% untuk sesi konseling pertama Anda.</p>
+                    <a href="#booking" class="btn btn-primary">Dapatkan Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="promo2.jpg" class="card-img-top" alt="Promo 2">
+                <div class="card-body">
+                    <h5 class="card-title">Diskon 20% Kursus Online</h5>
+                    <p class="card-text">Ikuti kursus online untuk topik pilihan anda dengan diskon yang terbaik.</p>
+                    <a href="#booking" class="btn btn-primary">Dapatkan Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="promo3.jpg" class="card-img-top" alt="Promo 3">
+                <div class="card-body">
+                    <h5 class="card-title">Diskon 20% Webinar</h5>
+                    <p class="card-text">Dapatkan diskon 20% dengan konsultan kami.</p>
+                    <a href="#booking" class="btn btn-primary">Dapatkan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fitur Kalendar Acara -->
+<section id="calendar" class="container mt-4">
+    <h2>Kalendar Acara</h2>
+    <div id="eventCalendar"></div>
+</section>
+
+<!-- Bagian Petunjuk Bimbingan -->
+<section id="guidance" class="container mt-4">
+    <h2>Tips dan Saran</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Tips Mengelola Stres
+                    </h5>
+                    <p class="card-text">Pelajari cara-cara efektif untuk mengelola stres dalam kehidupan
+                        sehari-hari.</p>
+                    <a href="#" class="btn btn-primary read-more">Baca Selengkapnya</a>
+                    <p class="card-description" style="display: none;">Informasi tambahan tentang mengelola stres...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Strategi Peningkatan Kesejahteraan</h5>
+                    <p class="card-text">Temukan strategi yang dapat membantu Anda meningkatkan kesejahteraan
+                        Anda secara keseluruhan.</p>
+                    <a href="#" class="btn btn-primary read-more">Baca Selengkapnya</a>
+                    <p class="card-description" style="display: none;">Informasi tambahan tentang peningkatan kesejahteraan...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bagian Layanan -->
+<section id="layanan DaMind" class="container mt-4">
+  <h2>Layanan Kami</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Konseling</h5>
+                  <p class="card-text flex-grow-1">Konseling dengan profesional untuk mengatasi masalah pribadi, mengelola stres, dan mencapai tujuan pribadi.</p>
+                  <a href="layanan.html" class="btn btn-primary mt-auto">Buat Janji</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Kursus Online</h5>
+                  <p class="card-text flex-grow-1">Kursus untuk mengembangkan keterampilan baru, meningkatkan kesejahteraan, dan memahami topik-topik tertentu.</p>
+                  <a href="layanan.html" class="btn btn-primary mt-auto">Lihat Kursus</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Webinar</h5>
+                  <p class="card-text flex-grow-1">Webinar inspiratif dan edukatif tentang kesehatan mental, pengembangan pribadi, dan kesejahteraan.</p>
+                  <a href="layanan.html" class="btn btn-primary mt-auto">Daftar Sekarang</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Bimbingan Karir</h5>
+                  <p class="card-text flex-grow-1">Bimbingan untuk menemukan minat, kekuatan, dan tujuan dalam karir serta merencanakan langkah selanjutnya.</p>
+                  <a href="layanan.html" class="btn btn-primary mt-auto">Pelajari Lebih Lanjut</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Program Pengembangan Diri</h5>
+                  <p class="card-text flex-grow-1">Program holistik untuk kesehatan fisik, mental, hubungan, dan kehidupan profesional.</p>
+                  <a href="layanan.html" class="btn btn-primary mt-auto">Pelajari Lebih Lanjut</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Meditasi</h5>
+                  <p class="card-text flex-grow-1">Kelas untuk meningkatkan kesehatan fisik, mengurangi stres, dan mencapai keseimbangan mental.</p>
+                  <a href="layanan.html" class="btn btn-primary mt-auto">Daftar Sekarang</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section id="tentang kami" class="container mt-4">
+    <h2 class="text-align center">Tentang kami</h2>
+    <div class="container">
+        <video id="videoPlayer" controls>
+            <source src="video/Damind Video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+        <div class="row mt-4">
+            <div class="col-md-8 text-justify">
+                <h1 style="font-size: 2rem;">DaMind</h1>
+            </div>
+            <div class="col-md-6 text-justify">
+                <p style="font-size: 1.25rem;">DaMind adalah platform edukasi yang berfokus pada pengembangan diri dan kesejahteraan mental.
+                    Kami menyediakan berbagai layanan seperti Konseling, Kursus Online, Webinar, Bimbingan Karir, Program Pengembangan Diri, dan Meditasi. 
+                    Untuk membantu Anda mencapai potensi penuh Anda dalam kehidupan.</p>
+            </div>
+            <div class="col-md-6 text-justify">
+                <p style="font-size: 1.25rem;">Visi kami adalah menjadi sumber daya terpercaya bagi individu dalam mencapai kesejahteraan
+                    mental, emosional, dan spiritual mereka. Dengan tim konselor dan pendidik yang berpengalaman,
+                    kami berkomitmen untuk memberikan layanan berkualitas tinggi kepada setiap klien kami.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Tentang DaMind Konseling</h5>
+                <p>DaMind Konseling adalah platform terkemuka untuk kesehatan mental dan kesejahteraan pribadi. Kami menyediakan layanan konseling profesional untuk membantu individu mencapai kehidupan yang lebih sehat dan bahagia.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Hubungi Kami</h5>
+                <address>
+                    123 Jalan Utama, Kota<br>
+                    Negara<br>
+                    <i class="fa fa-phone"></i> 123-456-7890<br>
+                    <i class="fa fa-envelope"></i> info@damindkonseling.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; 2024 DaMind Konseling. Hak Cipta Dilindungi.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="script dashboard.js"></script>
+    <script src="script dashboard1.js"></script>
+    <script src="script dashboard2.js"></script>
+  </body>
+</html>

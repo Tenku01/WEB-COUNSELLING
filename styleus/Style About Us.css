@@ -1,0 +1,168 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+
+.hero {
+  text-align: center;
+  color: #ffffff;
+  padding: 17vw;  /* Using viewport width for padding */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: clamp(24px, 5vw, 38px);  /* Responsive font size with min and max limits */
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: clamp(32px, 7vw, 55px);  /* Responsive font size with min and max limits */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: clamp(16px, 4vw, 20px);  /* Responsive font size with min and max limits */
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Additional media queries can still be used for fine-tuning if needed */
+@media (max-width: 768px) {
+  .hero {
+    padding: 15vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 15vw;
+  }
+}
+
+
+
+/* Styling untuk tombol */
+a.tbl-biru {
+  background: #2B70E4;
+  border-bottom: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15px;
+}
+a.tbl-biru:hover {
+  background: #bd0000;
+  text-decoration: none;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #2B70E4;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.manfaat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+.manfaat .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.manfaat .header .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.manfaat .header img {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+}
+
+.layanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  color: #000000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.layanan .apa-yang-kami-tawarkan {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.layanan .container1, .layanan .container2 {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 21px;
+  border: 2px solid rgba(0, 85, 255, 0.9);
+  padding: 20px;
+  width: 100%;
+  max-width: 990px; /* Set the maximum width for the containers */
+  margin-bottom: 20px; /* Space between containers */
+}
+
+.layanan .Sub {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #2B70E4;
+}
+
+.layanan .Sub2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #2B70E4;
+}
+
+.layanan p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+footer {
+    background-color: #2B70E4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

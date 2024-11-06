@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box font-family "poppins", sans-serif;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+.navbar {
+  background-color: #f8f9fa !important;
+}
+/* CSS */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #333 !important;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+/* Style untuk Navbar */
+.navbar {
+    background-color: #ffffff; /* Warna latar belakang navbar */
+    padding: 20px; /* Padding untuk ruang ekstra di dalam navbar */
+  }
+  
+  .navbar-brand {
+    color: #333333; /* Warna teks untuk merek atau logo */
+    font-size: 24px; /* Ukuran font */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333333; /* Warna teks untuk tautan */
+    font-size: 18px; /* Ukuran font untuk tautan */
+  }
+  /* CSS */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Style untuk Bagian Home */
+  #home {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten home */
+  }
+  
+  /* Style untuk Filsafat Pragmatisme */
+  #filsafat {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten filsafat */
+  }
+  
+  /* Style untuk Galeri */
+  #galeri {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten galeri */
+  }
+  
+  /* Style untuk Bagian Promosi Khusus */
+  #promosi {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten promosi */
+  }
+  
+  /* Style untuk Bagian Layanan */
+  #layanan {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten layanan */
+  }
+  
+  /* Style untuk Bagian Tentang Kami */
+  #tentang {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten tentang */
+  }
+  /* style.css */
+
+#tentang_kami {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tentang_kami h2 {
+  text-align: center;
+}
+
+#videoPlayer {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#tentang_kami .col-md-6 {
+  text-align: justify;
+}
+
+  /* Style untuk Bagian Konselor */
+  #konselor {
+    padding: 50px 0; /* Padding untuk ruang ekstra di sekitar konten konselor */
+  }
+  
+/* Footer Styles */
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #007bff;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+}
